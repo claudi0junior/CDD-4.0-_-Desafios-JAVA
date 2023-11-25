@@ -1,0 +1,47 @@
+/** Faça um Programa que leia
+um número e exiba o dia
+correspondente da semana. (1-
+Domingo , 2- Segunda, etc.) se
+digitar outro valor deve aparecer
+“valor inválido) **/
+
+package fundamentos;
+
+import java.util.Scanner;
+
+public class desafio_03 {
+
+	public static void main(String[] args) {
+		Scanner entrada = new Scanner(System.in);
+        int n1;
+        
+        System.out.println("Digite um numero: ");
+        n1 = entrada.nextInt();
+        
+        if (n1 == 1) {
+        	System.out.println("domingo");
+        }
+        else if (n1 == 2) {
+        	System.out.println("segunda");
+        }
+        else if (n1 == 3) {
+        	System.out.println("terca");
+        }
+        else if (n1 == 4) {
+        	System.out.println("quarta");
+        }
+        else if (n1 == 5) {
+        	System.out.println("quinta");
+        }
+        else if (n1 == 6) {
+        	System.out.println("sexta");
+        }
+        else if (n1 == 7) {
+        	System.out.println("sabado");
+        }
+        else {
+        	System.out.println("valor invalido");
+        }
+	}
+
+}

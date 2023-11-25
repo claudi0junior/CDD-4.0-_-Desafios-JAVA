@@ -1,0 +1,30 @@
+/** Faça um programa que solicite
+2 notas de um aluno e calcule a
+média dele e mostre na tela. **/
+
+package fundamentos;
+
+import java.util.Scanner;
+
+public class desafio_04 {
+
+	public static void main(String[] args) {
+		Scanner entrada = new Scanner(System.in);
+        double n1;
+        
+        System.out.println("Digite a primeira nota: ");
+        n1 = entrada.nextDouble();
+        
+        Scanner entrada02 = new Scanner(System.in);
+        double n2;
+        
+        System.out.println("Digite a segunda nota: ");
+        n2 = entrada02.nextDouble();
+        
+        double media = ( n1 + n2 )/ 2;
+        
+        System.out.println("a sua media foi de " + media);
+        
+	}
+
+}

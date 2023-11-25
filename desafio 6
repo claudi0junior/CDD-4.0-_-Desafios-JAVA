@@ -1,0 +1,78 @@
+/** Faça um programa que faça 5 perguntas para
+uma pessoa sobre um crime. As perguntas são:
+“Telefonou para a vítima? “
+“Esteve no local do crime?”
+“Mora perto da vítima? “
+“Devia para a vítima? “
+“Já trabalhou com a vítima? “
+O programa deve no final emitir uma
+classificação sobre a participação da pessoa no
+crime. Se a pessoa responder positivamente a 2
+questões ela deve ser classificada como
+“Suspeita”, entre 3 e 4 como “Cúmplice” e 5
+como “Assassino“. Caso contrário, ele será
+classificado como “Inocente“. **/
+
+package fundamentos;
+
+import java.util.Scanner;
+
+public class desafio_06 {
+
+	public static void main(String[] args) {
+		System.out.println("1 pra sim , 2 pra nao");
+		
+		Scanner entrada = new Scanner(System.in);
+        int n1;
+        
+        System.out.println("telefonou para a vitima ? ");
+        n1 = entrada.nextInt();
+        
+        ////
+        Scanner entrada02 = new Scanner(System.in);
+        int n2;
+        
+        System.out.println("esteve perto da vitima ? ");
+        n2 = entrada02.nextInt();
+        
+        ////pergunta 3
+        Scanner entrada03 = new Scanner(System.in);
+        int n3;
+        
+        System.out.println("mora perto da vitima ? ");
+        n3 = entrada03.nextInt();
+        
+        ////pergunta 4
+        Scanner entrada04 = new Scanner(System.in);
+        int n4;
+        
+        System.out.println("devia para a vitima ? ");
+        n4 = entrada04.nextInt();
+        
+        ////pergunta 5
+        Scanner entrada05 = new Scanner(System.in);
+        int n5;
+        
+        System.out.println("ja trabalhou com a vitima ? ");
+        n5 = entrada05.nextInt();
+
+        int soma = (n1 + n2 + n3 + n4 + n5);
+        
+        if (soma == 5 || soma == 6) {
+        	System.out.println("Inocente");
+        }
+        else if (soma == 7) {
+        	System.out.println("Suspeito");
+        }
+        else if (soma == 8 || soma == 9) {
+        	System.out.println("Cumplice");
+        }
+        else if (soma == 10) {
+        	System.out.println("Assasino");
+        }
+        else {
+        	System.out.println("Erro.");
+        }      	
+	}
+
+}

@@ -1,0 +1,31 @@
+/** Faça um programa que
+verifique (usando if e else) se
+uma letra digitada é “F” ou “M”.
+Conforme a letra escrever: F –
+Feminino, M- Masculino. **/
+
+package fundamentos;
+
+import java.util.Scanner;
+
+public class desafio_05 {
+
+	public static void main(String[] args) {
+		Scanner entrada = new Scanner(System.in);
+        char n1;
+        
+        System.out.println("Digite uma letra F ou M: ");
+        n1 = entrada.next().charAt(0);
+
+        if (n1 == 'F') {
+        	System.out.println("Femininno");
+        }
+        else if (n1 == 'M') {
+        	System.out.println("Masculino");
+        }
+        else {
+        	System.out.println("Erro. insira F ou M");
+        }
+	}
+
+}

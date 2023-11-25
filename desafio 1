@@ -1,0 +1,27 @@
+/** Faça um programa que peça um
+valor e mostre na tela se o valor
+é positivo ou negativo **/
+
+package fundamentos;
+
+import java.util.Scanner;
+
+public class desafio_01 {
+
+	public static void main(String[] args) {
+		Scanner entrada = new Scanner(System.in);
+        int perg;
+        
+        System.out.println("Digite um numero: ");
+        perg = entrada.nextInt(); 
+        if (perg > 0) {
+        	System.out.println("voce digitou " + perg + " e o valor e positivo" );
+        } if (perg == 0) {
+        	System.out.println("voce digitou " + perg );
+        }if (perg < 0 ) {
+        	System.out.println("voce digitou " + perg + " e o valor e negativo");
+        }
+        
+	}
+
+}

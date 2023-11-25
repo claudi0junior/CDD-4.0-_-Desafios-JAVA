@@ -1,0 +1,55 @@
+/** Faça um programa que leia
+três números, verifique (usando if
+e else) e mostre o maior e o
+menor deles; **/
+
+package fundamentos;
+
+import java.util.Scanner;
+
+public class desafio_02 {
+
+	public static void main(String[] args) {
+		Scanner entrada = new Scanner(System.in);
+        int perg01;
+        
+        System.out.println("Digite o primeiro numero: ");
+        perg01 = entrada.nextInt();
+        
+        Scanner entrada02 = new Scanner(System.in);
+        int perg02;
+        
+        System.out.println("Digite o segundo numero: ");
+        perg02 = entrada02.nextInt();
+        
+        Scanner entrada03 = new Scanner(System.in);
+        int perg03;
+        
+        System.out.println("Digite o terceiro numero: ");
+        perg03 = entrada03.nextInt();
+        
+        if (perg01 > perg02 && perg01 > perg03 && perg02 > perg03) {
+        	System.out.println("o valor maior e " + perg01 + " e o numero menor e " + perg02);
+        }
+        else if (perg01 > perg03 && perg01 > perg02 && perg03 > perg02) {
+        	System.out.println("o valor maior e " + perg01 + " e o numero menor e " + perg03);
+        }
+        else if (perg02 > perg01 && perg02 > perg03 && perg01 > perg03) {
+        	System.out.println("o valor maior e " + perg02 + " e o numero menor e " + perg01);
+        }
+        else if (perg02 > perg03 && perg02 > perg01 && perg03 > perg01) {
+        	System.out.println("o valor maior e " + perg02 + " e o numero menor e " + perg03);
+        }
+        else if (perg03 > perg01 && perg03 > perg02 && perg01 > perg02) {
+        	System.out.println("o valor maior e " + perg03 + " e o numero menor e " + perg01);
+        }
+        else if (perg03 > perg02 && perg03 > perg01 && perg02 > perg01) {
+        	System.out.println("o valor maior e " + perg03 + " e o numero menor e " + perg02);
+        }
+        else {
+        	System.out.println("Erro. ou numero se repetiu");
+        }
+	}
+	
+
+}
